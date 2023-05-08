@@ -4,7 +4,7 @@
     <fieldset>
         <legend>Login</legend>
         <div class="form-field">
-            <label>Email:</label>
+            <label>user:</label>
             <input name="email" formControlName="email">
         </div>
         <div class="form-field">
@@ -15,6 +15,8 @@
     </fieldset>
     <div class="form-buttons">
         <button class="button button-primary" 
-                (click)="submit()">Login</button>
+                (click)="login()">Login</button>
+        <!-- <button class="button button-primary" 
+                (click)="logout()">Logout</button> -->
     </div>
 </form>

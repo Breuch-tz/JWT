@@ -22,9 +22,6 @@ export class LoginComponent {
     });
   }
 
-  public async submit() {
-    await this.login();
-  }
 
   public async login() {
     const val = this.form.value;
@@ -36,10 +33,14 @@ export class LoginComponent {
         document.cookie = `token=${token}`
 
         console.log('User is logged in');
-        this.router.navigateByUrl('/dashboard');
       });
     }
   }
+
+//   public async logout(){
+// this.authService.logout()
+
+//   }
 
   
 }

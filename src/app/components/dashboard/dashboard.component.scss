@@ -1,0 +1,36 @@
+.x{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+.c{
+  
+   background-color: rgb(7, 16, 16);
+   flex-grow: 0.3;
+   margin-left:3%;
+   margin-right:3%;
+   display: grid;
+}
+.a{
+
+   flex-grow: 0.2;
+   background-color: rgb(109, 116, 116);
+   margin-left:3%;
+   margin-right:3%;
+   display: grid;
+}
+.b{
+   
+   flex-grow: 1;
+   background-color: aqua;
+   margin-left:3%;
+   margin-right:3%;
+   display: grid;
+   
+}
