@@ -24,10 +24,12 @@ export class LoginComponent {
 
 
   public async login() {
+    console.log(this.form.value)
     const val = this.form.value;
 
     if (val.email && val.password) {
-      this.authService.login(val.email, val.password).subscribe((res) => {  //warum obs und nicht promise
+      console.log("value")
+      this.authService.login(val).subscribe((res) => {  //warum obs und nicht promise
         
         const token =  res;
         document.cookie = `token=${token}`
@@ -41,6 +43,12 @@ export class LoginComponent {
 // this.authService.logout()
 
 //   }
+
+public async getExpiration(){
+  this.authService.getExpiration();
+
+
+}
 
   
 }
